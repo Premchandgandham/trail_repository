@@ -1,8 +1,0 @@
-prefix=/home/ros/catkin_ws/src/gmapping/build/devel
-
-Name: gmapping
-Description: Description of gmapping
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

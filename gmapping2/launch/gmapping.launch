@@ -8,11 +8,12 @@
 <param name="robot_description" textfile="$(find gmapping2)/urdf/trail_robo_nav.urdf" /> 
 
   <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" />
-
-  <node pkg="rviz" type="rviz" name="rviz"></node>
-
-  <node pkg="gmapping" type="slam_gmapping" name="gmapping" output="screen">
   
+   <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" /> 
+
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find gmapping2)/urdf_nav.rviz" required="true" /> 
+
+  <node pkg="gmapping" type="slam_gmapping" name="slam_gmapping" output="screen">
     <param name="base_frame" value="$(arg base_frame)"/>
     <param name="odom_frame" value="$(arg odom_frame)"/>
     <param name="map_update_interval" value="5.0"/>

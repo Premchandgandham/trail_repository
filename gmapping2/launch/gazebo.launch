@@ -2,7 +2,9 @@
 
 <launch>
 
-<include file="$(find gmapping2)/launch/rviz_nav.launch"/>
+<!--<include file="$(find gmapping2)/launch/rviz_nav.launch"/>-->
+
+<include file="$(find gmapping2)/launch/gmapping.launch"/>
 
  <arg name="world_file" default="$(find gmapping2)/world/gmapping.world"/>
  

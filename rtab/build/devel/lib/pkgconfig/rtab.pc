@@ -1,8 +1,0 @@
-prefix=/home/ros/catkin_ws/src/rtab/build/devel
-
-Name: rtab
-Description: Description of rtab
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 
